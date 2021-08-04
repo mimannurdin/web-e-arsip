@@ -1,0 +1,21 @@
+-----------------------------------------
+TERIMA KASIH TELAH PERCAYA KEPADA KAMI :)
+-----------------------------------------
+
+CARA INSTALL WEB E-ARSIP
+
+1. install xampp secara default(langsung next terus)
+2. ekstract folder e-arsip-master
+3. copy semua file yang ada di dalam folder e-arsip-master ke dalam folder C:/xampp/htdocs/ (jika ada replace tekan replace saja)
+4. jalankan aplikasi xampp-control.exe pada folder C:/xampp
+5. click start pada Apache dan MySQL (aplikasi jangan di tutup selama web masih berjalan)
+6. buka browser dan ketikkan 'localhost/phpmyadmin' lalu tekan enter
+7. klick tombol 'new' yang berada disisi kiri halaman
+8. pada input 'Database name' masukkan nama 'arsip' lalu tekan create.
+9. setelah itu akan muncul nama arsip di bawah tombol 'new' yang tadi.
+10. click tombol import yang ada di tengah halaman.
+11. pilih file arsip.sql yang berada di C:/xampp/htdocs/db/arsip.sql, kemudian click open.
+12. tekan 'Go' yang berada di halaman paling bawah.
+13. buka slide baru pada browser dan ketikkan 'localhost/index.php'.
+
+catatan : semua tanda petik yang ada di tutorial diatas hiraukan saja.

@@ -1,0 +1,103 @@
+.checkbox {
+    opacity: 0;
+    position: absolute;
+
+    & + label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: #f7f7f7;
+            border: 3px solid #3ac794;
+            margin-right: 5px;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+            transition: .3s all ease-in-out;
+        }
+
+        &::after {
+            content: "✔";
+
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            text-align: center;
+            // font-size: 12px;
+            color: #f7f7f7;
+            transform: scale(0);
+
+            transition: .3s all ease-in-out;
+        }
+    }
+
+    &:checked {
+        & + label::before {
+            border-width: 10px;
+        }
+
+        & + label::after {
+            transform: scale(1);
+        }
+    }
+}
+
+.checkbox-trash {
+    opacity: 0;
+    position: absolute;
+
+    & + label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        color: #636363;
+        cursor: pointer;
+    }
+
+    &:checked {
+        & + label {
+            color: #e62e2e;
+        }
+    }
+}
+
+.radiobox {
+    opacity: 0;
+    position: absolute;
+
+    & label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: #f7f7f7;
+            border: 2px solid #3ac794;
+            margin-right: 5px;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            transition: .3s all cubic-bezier(.42,0,.41,2.55);
+        }
+    }
+
+    &:checked {
+        & + label::before {
+            border-width: 6px;
+        }
+    }
+}
